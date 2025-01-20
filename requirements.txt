@@ -1,0 +1,7 @@
+numpy
+pandas
+matplotlib
+fedot
+fedot[extra]
+statsmodels
+scikit-learn
