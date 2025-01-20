@@ -82,10 +82,10 @@ train = fill_missing_values(train)
 test = fill_missing_values(test)
 
 
-# Создаём список всех категориальных столбцов, которые нужно закодировать
+
 categorical_columns = ['family', 'type', 'locale', 'locale_name', 'description']
 
-# Применяем pd.get_dummies к train и test, добавляя недостающие столбцы в test
+
 train_encoded = pd.get_dummies(train, columns=categorical_columns, drop_first=True)
 test_encoded = pd.get_dummies(test, columns=categorical_columns, drop_first=True)
 
@@ -112,21 +112,21 @@ test_encoded = test_encoded.sort_index(axis=1)
 #     # Проверка на NaN
 #     if df.isnull().any().any():
 #         print("Warning: Data contains NaN values!")
-#         print(df.isnull().sum())  # Показываем количество пропусков по каждому столбцу
+#         print(df.isnull().sum())
 #     else:
 #         print("No NaN values found.")
 #
 #     # Проверка на бесконечность (исключаем нечисловые столбцы)
-#     numeric_df = df.select_dtypes(include=[np.number])  # Оставляем только числовые столбцы
+#     numeric_df = df.select_dtypes(include=[np.number])
 #     if np.isinf(numeric_df.values).any():
 #         print("Warning: Data contains infinite values (inf or -inf)!")
-#         print((numeric_df == np.inf).sum())  # Показываем количество бесконечных значений по каждому столбцу
+#         print((numeric_df == np.inf).sum())
 #     else:
 #         print("No infinite values found.")
 #
-#     # Статистика по данным
+#
 #     print("Общие статистики данных:")
-#     print(df.describe())  # Показываем общую статистику по данным
+#     print(df.describe())
 #
 #
 # # Проверка для исходных данных
@@ -208,9 +208,6 @@ plt.plot(range(len(y_train), len(y_train) + len(predictions)), predictions, labe
 plt.legend()
 plt.show()
 
-plot_acf(y_train, lags=50)
-plt.title('Autocorrelation of Sales')
-plt.show()
 
 
 
