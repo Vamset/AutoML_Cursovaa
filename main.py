@@ -209,13 +209,6 @@ plt.legend()
 plt.show()
 
 
-
-
-
-submission = pd.DataFrame({'id': test['id'], 'sales': predictions})
-
-submission.to_csv('submission.csv', index=False)
-
 # Визуализация
 plt.figure(figsize=(10, 6))
 plt.hist(y_train, bins=30, alpha=0.7, color='blue')
