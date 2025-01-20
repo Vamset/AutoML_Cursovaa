@@ -1,0 +1,61 @@
+C:\Users\Connor\PycharmProjects\CurseAutoML\venv\Scripts\python.exe C:\Users\Connor\PycharmProjects\CurseAutoML\main.py 
+2025-01-20 00:42:33,068 - Начало обучения модели
+2025-01-20 00:42:34,500 - LaggedTransformationImplementation - Window size of lagged transformation was changed by WindowSizeSelector from 0 to 498
+2025-01-20 00:42:38,782 - ApiComposer - Initial pipeline was fitted in 4.3 sec.
+2025-01-20 00:42:38,783 - ApiComposer - Taking into account n_folds=3, estimated fit time for initial assumption is 12.9 sec.
+2025-01-20 00:42:38,783 - AssumptionsHandler - Preset was changed to best_quality due to fit time estimation for initial model.
+2025-01-20 00:42:38,796 - ApiComposer - AutoML configured. Parameters tuning: True. Time limit: 40 min. Set of candidate models: ['linear', 'ridge', 'lasso'].
+2025-01-20 00:42:38,828 - ApiComposer - Pipeline composition started.
+Generations:   0%|          | 0/10000 [00:00<?, ?gen/s]2025-01-20 00:42:43,236 - LaggedTransformationImplementation - Window size of lagged transformation was changed by WindowSizeSelector from 0 to 126
+2025-01-20 00:42:45,325 - MultiprocessingDispatcher - 1 individuals out of 1 in previous population were evaluated successfully.
+2025-01-20 00:46:13,925 - MultiprocessingDispatcher - 21 individuals out of 21 in previous population were evaluated successfully.
+2025-01-20 00:46:28,769 - MultiprocessingDispatcher - 13 individuals out of 13 in previous population were evaluated successfully.
+2025-01-20 00:46:32,916 - MultiprocessingDispatcher - 4 individuals out of 4 in previous population were evaluated successfully.
+2025-01-20 00:46:35,754 - MultiprocessingDispatcher - 3 individuals out of 3 in previous population were evaluated successfully.
+Generations:   0%|          | 1/10000 [03:56<658:04:31, 236.93s/gen]2025-01-20 00:46:54,445 - MultiprocessingDispatcher - 14 individuals out of 14 in previous population were evaluated successfully.
+2025-01-20 00:49:37,331 - MultiprocessingDispatcher - 4 individuals out of 4 in previous population were evaluated successfully.
+2025-01-20 00:50:20,673 - MultiprocessingDispatcher - 3 individuals out of 3 in previous population were evaluated successfully.
+Generations:   0%|          | 2/10000 [07:41<638:23:25, 229.87s/gen]2025-01-20 00:52:20,041 - MultiprocessingDispatcher - 12 individuals out of 12 in previous population were evaluated successfully.
+2025-01-20 00:52:25,822 - MultiprocessingDispatcher - 5 individuals out of 5 in previous population were evaluated successfully.
+2025-01-20 00:52:51,069 - MultiprocessingDispatcher - 2 individuals out of 2 in previous population were evaluated successfully.
+Generations:   0%|          | 3/10000 [10:12<537:33:15, 193.58s/gen]2025-01-20 00:55:43,505 - MultiprocessingDispatcher - 8 individuals out of 8 in previous population were evaluated successfully.
+2025-01-20 00:56:03,223 - MultiprocessingDispatcher - 5 individuals out of 5 in previous population were evaluated successfully.
+2025-01-20 00:56:03,232 - MultiprocessingDispatcher - 13 individuals out of 13 in previous population were evaluated successfully.
+Generations:   0%|          | 4/10000 [13:24<535:56:27, 193.02s/gen]2025-01-20 00:56:11,901 - MultiprocessingDispatcher - 6 individuals out of 6 in previous population were evaluated successfully.
+2025-01-20 00:59:47,731 - MultiprocessingDispatcher - 7 individuals out of 7 in previous population were evaluated successfully.
+2025-01-20 00:59:54,960 - MultiprocessingDispatcher - 6 individuals out of 6 in previous population were evaluated successfully.
+Generations:   0%|          | 5/10000 [17:16<574:39:07, 206.98s/gen]2025-01-20 01:00:44,415 - MultiprocessingDispatcher - 15 individuals out of 15 in previous population were evaluated successfully.
+2025-01-20 01:01:00,243 - MultiprocessingDispatcher - 14 individuals out of 14 in previous population were evaluated successfully.
+2025-01-20 01:01:14,625 - MultiprocessingDispatcher - 6 individuals out of 6 in previous population were evaluated successfully.
+Generations:   0%|          | 6/10000 [18:35<454:25:52, 163.69s/gen]2025-01-20 01:04:44,423 - MultiprocessingDispatcher - 24 individuals out of 24 in previous population were evaluated successfully.
+2025-01-20 01:04:58,672 - MultiprocessingDispatcher - 10 individuals out of 10 in previous population were evaluated successfully.
+Generations:   0%|          | 7/10000 [22:19<531:22:01, 191.43s/gen]
+2025-01-20 01:04:58,813 - GroupedCondition - Optimisation stopped: Time limit is reached
+2025-01-20 01:04:58,831 - ApiComposer - Hyperparameters tuning started with 18 min. timeout
+2025-01-20 01:05:09,118 - SimultaneousTuner - Initial graph: {'depth': 4, 'length': 4, 'nodes': [ridge, ridge, ridge, lagged]}
+ridge - {'alpha': 0.4520095878541616}
+ridge - {}
+ridge - {}
+lagged - {'window_size': 193.63282616186754} 
+Initial metric: [751.866]
+100%|██████████| 10/10 [01:41<00:00, 10.11s/trial, best loss: 751.8687186747446]
+  0%|          | 79/100000 [15:36<376:37:47, 13.57s/trial, best loss: 738.5541175495977]
+2025-01-20 01:22:43,546 - SimultaneousTuner - Final graph: {'depth': 4, 'length': 4, 'nodes': [ridge, ridge, ridge, lagged]}
+ridge - {'alpha': 7.633896330555095}
+ridge - {'alpha': 0.24852559998597284}
+ridge - {'alpha': 3.393326232609844}
+lagged - {'window_size': 500}
+2025-01-20 01:22:43,547 - SimultaneousTuner - Final metric: 738.554
+2025-01-20 01:22:43,552 - ApiComposer - Hyperparameters tuning finished
+2025-01-20 01:22:43,642 - ApiComposer - Model generation finished
+2025-01-20 01:22:50,699 - FEDOT logger - Final pipeline was fitted
+2025-01-20 01:22:50,700 - FEDOT logger - Final pipeline: {'depth': 4, 'length': 4, 'nodes': [ridge, ridge, ridge, lagged]}
+ridge - {'alpha': 7.633896330555095}
+ridge - {'alpha': 0.24852559998597284}
+ridge - {'alpha': 3.393326232609844}
+lagged - {'window_size': 500}
+Модель обучена
+MAE: 39648.53
+RMSE: 39659.28
+
+Process finished with exit code 0
