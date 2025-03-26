@@ -5,3 +5,4 @@ fedot
 fedot[extra]
 statsmodels
 scikit-learn
+google.colab
